@@ -4,9 +4,10 @@ import { styled } from "styled-components";
 const SytledLink = styled(Link)`
   text-decoration: none;
   padding: 0.7rem;
-  width: 30%;
+  width: 33%;
   align-items: center;
   color: white;
+  text-align: center;
 
   &:hover {
     background: orange;
