@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 import CommentForm from "./CommentForm";
 import Comments from "./Comments";
 import FavoriteButton from "./FavoriteButton";
-import { useState } from "react";
 import Head from "next/head";
 
 const StyledSection = styled.section`
@@ -11,6 +10,7 @@ const StyledSection = styled.section`
   border: 0.1rem solid gray;
   border-radius: 2rem;
   padding: 1rem;
+  position: relative;
 `;
 
 const StyledPara = styled.p`
