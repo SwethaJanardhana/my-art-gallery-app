@@ -78,7 +78,7 @@ export default function ArtPieceDetails({
         <li>
           <StyledDiv
             $color={"white"}
-            onClick={() => onBackgroundSelection(slug, "#000000")}
+            onClick={() => onBackgroundSelection(slug, "white")}
           ></StyledDiv>
         </li>
       </StyledList>
