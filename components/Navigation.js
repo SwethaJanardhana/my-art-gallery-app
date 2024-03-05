@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { styled } from "styled-components";
 
 const SytledLink = styled(Link)`
   text-decoration: none;
-  padding: 0.7rem;
-  width: 33%;
+  padding: 0.7rem 0;
+  width: 33.3%;
   align-items: center;
   color: white;
   text-align: center;
@@ -15,11 +16,26 @@ const SytledLink = styled(Link)`
 `;
 
 export default function Navigation() {
+  const router = useRouter();
+
+  const isActive = (href) => router.pathname === href;
   return (
     <>
-      <SytledLink href="/">Spotlight</SytledLink>
-      <SytledLink href="/art-pieces/">Art Pieces</SytledLink>
-      <SytledLink href="/favorites/">Favourites</SytledLink>
+      <SytledLink href="/" className={isActive("/") ? "active" : ""}>
+        Spotlight
+      </SytledLink>
+      <SytledLink
+        href="/art-pieces/"
+        className={isActive("/art-pieces") ? "active" : ""}
+      >
+        Art Pieces
+      </SytledLink>
+      <SytledLink
+        href="/favorites/"
+        className={isActive("/favorites") ? "active" : ""}
+      >
+        Favourites
+      </SytledLink>
     </>
   );
 }

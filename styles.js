@@ -11,4 +11,9 @@ export default createGlobalStyle`
     margin: 0;
     font-family: system-ui;
   }
+
+  .active {
+    background-color: brown;
+    pointer-events: none;
+  }
 `;

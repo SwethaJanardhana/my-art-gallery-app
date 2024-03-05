@@ -9,7 +9,6 @@ const StyledFooter = styled.footer`
   align-items: center;
   justify-content: space-around;
   background: gray;
-  gap: 2rem;
   color: #eee;
 `;
 
